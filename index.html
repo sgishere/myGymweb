@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar's Gym</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css-reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/dark-1839088_1920.jpg');
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        /* height: 2000px; */
+        /* width: 2000px */
+    }
+    .left{
+        /* border: 2px solid white; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 12px;
+    }
+    .mid{
+        /* border: 2px solid red; */
+        width: 33%;
+        margin: 20px auto;
+
+    }
+    .right{
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 12px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 8px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        width: 70px;
+        filter: invert(100%);
+        padding: 5px 10px;
+    }
+    .left div{
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .btn{
+        margin: 0px 20px;
+        background-color: black;
+        color: white;
+        padding: 6px 20px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .btn:hover{
+        background-color: rgb(107, 106, 106);
+    }
+    .container {
+    border: 2px solid white;
+    margin: 96px 35px;
+    padding: 50px 50px;
+    width: 33%;
+    border-radius: 30%;
+    }
+
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 23px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+       display: block;
+    width: 40%;
+    margin: 24px auto -17px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left Box for Logo -->
+        <div class="left">
+            <img src="img/dumbbell.jpeg" alt="">
+            <div>Sagar Fitness</div>
+        </div>
+
+        <!-- Mid box for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+        </div>
+
+        <!-- Right Box for buttons -->
+        <div class="right">
+           <button class="btn">Call Us Now</button>
+           <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container"> 
+       <h1>Join the Best Gym of Noida Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+</html>
